@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif:wght@400;700&family=Poppins:wght@100;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap");
+
+.App {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.main--body {
+  display: grid;
+  grid-template-columns: 0.5fr 3.5fr; /* 1/4th and 3/4th of the space */
+}
+
+.header {
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.header h1 {
+  color: rgb(216, 1, 1);
+}
+
+.sidebar {
+  text-align: left;
+  padding: 10px;
+  gap: 10px;
+  margin: 0px 5px 0px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar a {
+  color: #6b7280;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sidebar i {
+  color: #6b7280;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.outlet {
+  background-color: #ffffff;
+}
+
+.categories--list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 1rem;
+}
+
+.category--card {
+  text-align: left;
+}
+
+.category--card h3 {
+  margin: 10px;
+}
+
+.category--card img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.category--card h3 {
+  margin: 1px 5px;
+  font-weight: 500;
+}
+
+.categoryVideos--list,
+.watchlater--list,
+.explore--list,
+.playlists--list,
+.playlistVideos--list,
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 1rem;
+}
+
+.playlist--card {
+  width: 20rem;
+  box-shadow: 0 2px 4px rgba(105, 83, 83, 0.3);
+  position: relative;
+  text-align: left;
+  position: relative;
+}
+
+.playlist--modal--playlistBtns {
+  background-color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+.close--btn {
+  background-color: white;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 600;
+}
+.playlist--card h4,
+p {
+  margin: 5px;
+}
+
+.playlist--card img {
+  width: 100%;
+}
+
+.video {
+  width: 20rem;
+  position: relative;
+}
+
+.video img {
+  width: 100%;
+}
+
+.video .description {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.video .description img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+.video .description h5 {
+  text-align: left;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.video .description div div {
+  display: flex;
+  gap: 5px;
+}
+
+.video p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.clock {
+  display: inline;
+  position: absolute;
+  right: -2px;
+  background-color: white;
+  padding: 10px;
+  color: black;
+  border-radius: 0px 0px 0px 5px;
+}
+
+.more--videos {
+  width: 25%;
+  padding: 0 5px 0 1rem;
+  text-align: left;
+}
+.morevideos--list {
+  display: grid;
+  grid-template-columns: repeat(1, 0.8fr);
+  gap: 5px;
+}
+
+.morevideos--list .video {
+  border-bottom: 1px solid gray;
+}
+
+.more--videos h3 {
+  margin: 0 0 01rem 0;
+}
+
+.detailspage--div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.details--page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 75%;
+}
+
+.details--page .details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.details--page iframe {
+  width: 100%;
+  height: 30rem;
+}
+
+.details--page .details div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.details--page .details img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.notes--div {
+  width: 100%;
+  text-align: left;
+  width: 90%;
+  border-bottom: 1px solid black;
+}
+
+.notes--div .note {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.notes--icons {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.search--input {
+  width: 40rem;
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+
+.searchinput--div {
+  position: relative;
+}
+
+.search--icon {
+  position: absolute;
+  right: 21rem;
+  top: 6px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+}
+
+.note--modal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the playlist modal */
+.playlist--modal {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for labels */
+.playlist--modal label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Styles for inputs */
+.playlist--modal input,
+.note--modal input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for the add button */
+.playlist--modal button,
+.note--modal button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.playlist--modal button:hover,
+.note--modal button:hover {
+  background-color: #0056b3;
+}
+
+.editNote {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.editNote input {
+  width: 100%;
+  padding: 5px;
+}
+
+i,
+button {
+  cursor: pointer;
+}
